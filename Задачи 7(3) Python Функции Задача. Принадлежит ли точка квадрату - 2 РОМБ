@@ -1,0 +1,17 @@
+import math
+def circle(x, y):
+    rasstoyan = abs(x)+abs(y)
+    if rasstoyan <= 1:
+        print("YES")
+    else:
+        print("NO")
+x = float(input())
+y = float(input())
+circle(x, y)
+
+
+def is_in1(x, y):
+    return((abs(x)+abs(y)) <= 1)
+print(is_in1(float(input()), float(input())))
+
+
