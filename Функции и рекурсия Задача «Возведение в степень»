@@ -1,0 +1,29 @@
+def power(a, n):
+    if n == 0:
+        return(1)
+    else:
+        return(a * power(a, n - 1))
+print(power(float(input()), int(input())))
+
+
+def power(a, n):
+    if n == 0:
+        a=int(1)
+        return(a)
+    else:
+        a = a * power(a, n - 1)
+        return(a)
+a=float(input())
+n=int(input())
+print(power(a, n))
+
+
+def power(a, n):
+    if n == 0:
+        return 1
+    else:
+        return a * power(a, n - 1)
+
+print(power(float(input()), int(input())))
+
+
