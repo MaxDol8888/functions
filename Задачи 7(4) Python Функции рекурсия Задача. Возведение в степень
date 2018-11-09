@@ -1,0 +1,35 @@
+def chis(A,N):
+    if N==0:
+        return 1
+    else:
+        return A * chis(A, N-1)
+A = int(input())
+N = int(input())
+print(chis(A,N))
+
+
+def power(x, n):
+    if n != 0:
+        return x * power(x, n-1)
+    else:
+        return 1 
+print(power(4, 4))
+
+
+def power(a, n):
+    if n == 0:
+        return 1
+    else:
+        return a * power(a, n - 1)
+ 
+print(power(float(input()), int(input())))
+
+
+a = float(input())
+n = int(input())
+def power(a,n):
+    if n==0:
+        return 1
+    else:
+        return a*power(a,n-1)
+print(power(a,n))
