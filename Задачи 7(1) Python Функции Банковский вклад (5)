@@ -1,0 +1,35 @@
+def bank(a, years):
+    for i in range(years):
+        a += (a * 0.1)
+    return(a)
+print(bank(float(input()), int(input())))
+
+
+def bank(a,years):
+    for i in range(years):
+        a+=(a*0.1)
+    return a
+a=float(input())
+years=int(input())
+print(bank(a,years))
+
+
+def bank(a=int(input()), year=int(input()) ):
+    for x in range(year, 0, -1):
+        a=((110*a)/100)
+    print(a)
+
+bank()
+
+
+def bank(a,years):
+    biznes=0
+    for count in range(years):
+        biznes+=a+(a*0.1)
+    return biznes
+print("Рубли")
+rub=int(input())
+print("На сколько лет")
+god=int(input())
+sum=bank(rub,god)
+print(sum)
