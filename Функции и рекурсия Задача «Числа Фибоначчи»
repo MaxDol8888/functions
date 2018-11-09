@@ -1,0 +1,34 @@
+def fib(n):
+    if n == 1 or n == 2:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+print(fib(int(input())))
+
+
+n=int(input())
+def fin(n):
+    if n == 1 or n == 2:
+        return 1
+    elif n == 3:
+        return 2
+    else:
+        return fin(n - 1) + fin(n -2)
+print(fin(n))
+
+
+def fib(n):
+    if n<3:
+        return(1)
+    return (fib(n-1)+fib(n-2))
+a=int(input())
+print(fib(a))
+
+
+n = int(input())
+l = n
+def fib(n):
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+print(fib(n))
