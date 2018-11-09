@@ -1,0 +1,27 @@
+def reverse():
+    n = int(input())
+    if n != 0:
+        reverse()
+        print(n)
+    else:
+        print(0)
+reverse()
+
+
+def reverse():
+    x = int(input())
+    if x != 0:
+        reverse()
+    print(x)
+
+reverse()
+
+
+def razvorot():
+    a=int(input())
+    if a!=0 :
+        razvorot()
+    print(a)
+razvorot() 
+
+
