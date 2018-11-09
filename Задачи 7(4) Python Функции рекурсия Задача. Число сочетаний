@@ -1,0 +1,23 @@
+def chis(N,K):
+    if N==K:
+        return 1
+    elif K==1:
+        return N
+    else:
+        return chis(N-1, K-1) + chis(N-1, K)
+N = int(input())
+K = int(input())
+print(chis(N,K))
+
+
+def C(n,k):
+    if k==0:
+        return 1
+    elif k>n:
+        return 0
+    else:
+        return C(n-1,k)+C(n-1,k-1)
+n=int(input())
+k=int(input())
+print(C(n,k))
+
