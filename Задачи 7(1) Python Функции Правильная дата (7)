@@ -1,0 +1,73 @@
+def date(x, y, z):
+    if (((z % 400) == 0) or ((z % 4) == 0 and (z % 100) != 0)) and y == 2 and x == 29:
+        return(True)
+    elif (y == 2 and x >= 29) or x > 31 or y > 12:
+        return(False)
+    elif y in range(1, 8):
+        if ((y % 2) != 0) and x <= 31:
+            return(True)
+        if ((y % 2) == 0) and x <= 30:
+            return(True)
+        else:
+            return(False)
+    elif y in range(9, 13):
+        if ((y % 2) == 0) and x <= 31:
+            return(True)
+        if ((y % 2) != 0) and x <= 30:
+            return(True)
+        else:
+            return(False)
+    else:
+        return(False)
+print(date(int(input()), int(input()), int(input())))
+
+
+def date(d,m,y):
+    
+    if (m>12):
+        ranger=tuple()
+        ##если месяц больше 12, то я беру за месяц 12
+        ranger=y,12
+    else:
+        ranger=calendar.monthrange(y,m)
+    
+    start=ranger[0]
+    end=ranger[1]
+    if(d>start and d<end+1):
+        return True
+    else:
+    	return False
+print("Day?")
+D=int(input())
+print("Month?")
+M=int(input())
+print("Year?")
+Y=int(input())
+answer=date(D,M,Y)
+print(answer)
+
+
+from calendar import monthcalendar
+def true_date(year, month, day):
+    if month > 12:
+        return('''
+           _~_    
+          (o o)   
+         /  V  \  
+        /(  _  )\ 
+          ^^ ^^
+        ''' * 3)  
+    calen_month = (monthcalendar(year, month))          #creation double list of true dates
+    calen_monthopen = []
+    for i in calen_month:
+        for v in i:
+            if v != 0:
+                calen_monthopen.append(int(v))          #double list to simple list
+    if day in calen_monthopen:
+        return(True)
+    else:
+        return(False)
+print(true_date(int(input('year: ')),
+                int(input('month: ')),
+                int(input('day: '))))
+
