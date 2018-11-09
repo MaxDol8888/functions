@@ -1,0 +1,38 @@
+from math import sqrt
+def is_in_c(x, y, xc, yc, r):
+    return(((sqrt(((abs(xc-x)) ** 2) + ((abs(yc-y)) ** 2))) <= r))
+print(is_in_c(float(input()), float(input()), float(input()),
+              float(input()), float(input())))
+ 
+ 
+import math
+def circle(x, y, xc, yc, r):
+    rasstoyan = (math.sqrt(((abs(xc - x)) ** 2) + ((abs(yc - y)) ** 2)))
+    if rasstoyan <= r:
+        print("YES")
+    else:
+        print("NO")
+x = float(input())
+y = float(input())
+xc = float(input())
+yc = float(input())
+r = float(input())
+circle(x, y, xc, yc, r)
+
+
+
+import math
+ 
+print("Введите координаты точки и радиус круга")
+x = float(input("x = "))
+y = float(input("y = "))
+r = float(input("R = "))
+ 
+r_xy = math.sqrt(x**2 + y**2)
+ 
+if r_xy <= r:
+	print("Точка принадлежит кругу")
+else:
+	print("Точка НЕ принадлежит кругу")
+  
+  
