@@ -1,0 +1,7 @@
+def XOR_cipher(x, k):
+    ll = str()
+    for i in x:
+        ll += chr(ord(i) ^ k)
+    return(ll)
+print(XOR_cipher(str(input()), int(input())))
+
