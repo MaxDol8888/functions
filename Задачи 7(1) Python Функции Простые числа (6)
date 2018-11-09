@@ -1,0 +1,48 @@
+from math import sqrt
+def is_prime(x):
+    for i in range(2, 1001):
+        if ((x % i) == 0) and i != x:
+            return(False)
+            break
+        elif i == 1000:
+            return(True)
+print(is_prime(int(input()))) 
+
+
+def is_prime(a=int(input())):
+    i=0
+    for x in range(1,a+1):
+        if(a%x==0):
+            i=i+1
+    if(i==2):
+        print("True")
+    else:
+        print("False")
+
+
+is_prime()
+
+
+def is_prime(number):
+    if(number<0 or number >1000):
+        return "Это число должно быть от 0 до 1000  включительнно"
+    else:
+        while True:
+            if(number==2 or (number%2)!=0):
+                return True
+            else:
+                return False
+
+
+def prime(chislo):
+    count= 2
+    while count < chislo:
+        if chislo % count != 0:
+            count +=1
+            continue 
+        else:
+            return True 
+    return False
+print("Введите число от 1 до 1000")
+chislo=int(input())
+print(prime(chislo))
