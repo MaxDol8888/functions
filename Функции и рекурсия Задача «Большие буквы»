@@ -1,0 +1,53 @@
+def capitalize(a):
+    a = a.split(' ')
+    x=str()
+    for i in range(len(a)):
+        x = str(a[i])
+        a[i] = x.replace(x[0], chr((ord(x[0])) - 32), 1) 
+    return(a)
+print(' '.join(capitalize(str(input()))))
+
+
+def capitalize(word):
+    first_letter_small = word[0]
+    first_letter_big = chr(ord(first_letter_small) - ord('a') + ord('A'))
+    return first_letter_big + word[1:]
+
+source = input().split()
+res = []
+for word in source:
+    res.append(capitalize(word))
+print(' '.join(res))
+
+
+def capitalize(text):
+    res=[]
+    for word in text:
+        new_word=chr(ord(word[0])-32)+word[1:]
+        res.append(new_word)
+    r =' '.join(res)
+    return r
+        
+    
+word=input().split()
+print(capitalize(word))
+
+
+def capitalize(w):
+    w=w.title()
+    print(w)
+w=str(input())
+capitalize(w)
+
+
+def capitalize(word):
+    word = word.title()
+    return word
+word = input()
+print(capitalize(word))
+
+
+def capitalize():
+    return n.upper()
+n= input()
+print(capitalize())
