@@ -1,0 +1,16 @@
+def kletka(n):
+    s=int(-1)
+    mass=[]
+    for i in range(n):
+        mass.append(" ")
+    for i in range(0,len(mass)):
+        if i==0:
+            continue
+        else:
+            print(-s)
+            s=-s
+            mass[i]=i+1
+            print(mass[i])
+    print(-s)
+n = int(input())
+kletka(n)
