@@ -1,0 +1,42 @@
+def arithmetic(x, y, o):
+    if o == '+':
+        return(x + y)
+    elif o == '-':
+        return(x - y)
+    elif o == '*':
+        return(x * y)
+    elif o == '/':
+        return(x / y)
+    else:
+        return('Idiot')
+print('Input two numbers and operation.')
+print(arithmetic(float(input()), float(input()), input()))
+
+
+def ariphmetic(a,b,operation):
+    if(operation=='+'):
+        return a+b
+    elif(operation=='-'):
+        return a-b
+    elif(operation=='*'):
+        return a*b
+    elif(operation=='/'):
+        return a/b
+    else:
+        return "Такой операции нет"
+        
+        
+ def arithmetic(a=int(input()), b=int(input()),c=str(input()) ):
+    if(c=="+"):
+        print(a+b)
+    elif(c=="-"):
+        print(a-b)
+    elif(c=="*"):
+        print(a*b)
+    elif(c=="/"):
+        print(a/b)
+    else:
+        print("Неизвестная операция")
+
+arithmetic()
+
