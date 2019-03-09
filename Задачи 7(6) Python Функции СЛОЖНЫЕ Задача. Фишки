@@ -1,3 +1,4 @@
+#Netiaga
 def kletka(n):
     s=int(-1)
     mass=[]
@@ -14,3 +15,31 @@ def kletka(n):
     print(-s)
 n = int(input())
 kletka(n)
+
+
+#Kamenev
+N = int(input('Введите N: '))
+ 
+def calculation(n):
+    result = [1]
+    
+    if n > 1:
+        for i in range(2, (n-1)*2+1):
+            if i%2 == 0:
+                result.append(i//2 + 1)
+            else:
+                result.append(-1*(i-1)//2)
+ 
+        if n-2 > 1:
+            return result + calculation(n-2)
+        elif n-2 == 1:
+            return result + [1]
+            
+ 
+    return result
+ 
+if 1<=N<=10:
+    print(*calculation(N))
+else:
+    print('1<=N<=10 !')
+
