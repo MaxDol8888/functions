@@ -1,0 +1,14 @@
+#Kamenev
+def move(n, x, y):
+  if n > 0:
+    z = 6 - x - y
+    if allowed[(x,y)]:
+      move(n-1, x, z)
+      print(n, x, y)
+      move(n-1, z, y)
+    else:
+      move(n, x, z)
+      move(n, z, y)
+ 
+n = int(input())
+move(n,1,3)
