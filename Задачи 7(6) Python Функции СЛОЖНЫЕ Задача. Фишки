@@ -1,4 +1,4 @@
-#Netiaga
+#Netyaga
 def kletka(n):
     s=int(-1)
     mass=[]
